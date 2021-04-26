@@ -63,9 +63,12 @@ nav{
     a{
         text-decoration: none;
         color: $text-color;
-        display: inline-block;
-        padding: 1em 2em;
+        padding: 1em 0;
+        flex: 3;
     }
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 // custom css
 .padding{
@@ -80,14 +83,20 @@ nav{
 main{
     background-color: $bg-color;
 }
+
+.main-flex{
+display: flex;
+
+}
+
 .sideleft{
-    width: 30%;
-    float: left;
+    flex: 1;
+    margin-right: 5rem;
 }
 .sideright{
-    width: 60%;
-    float: right;
+    flex: 2;
 }
+
 .btn{
     background: $main-color;
     padding: .6em 2em;
@@ -97,9 +106,13 @@ main{
     border-radius: 25px;
 }
 
+.box-flex{
+    display: flex;
+}
+
 .box{
-    width: 30%;
-    float: left;
+    flex: 1;
+    flex-direction: row;
     padding: 2em;
     text-align: center;
     color: $text-color;

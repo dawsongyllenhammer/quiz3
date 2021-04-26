@@ -9690,13 +9690,16 @@ header {
 
 nav {
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 nav a {
   text-decoration: none;
   color: #fff;
-  display: inline-block;
-  padding: 1em 2em;
+  padding: 1em 0;
+  flex: 3;
 }
 
 .padding {
@@ -9712,14 +9715,17 @@ main {
   background-color: #eee;
 }
 
+.main-flex {
+  display: flex;
+}
+
 .sideleft {
-  width: 30%;
-  float: left;
+  flex: 1;
+  margin-right: 5rem;
 }
 
 .sideright {
-  width: 60%;
-  float: right;
+  flex: 2;
 }
 
 .btn {
@@ -9731,9 +9737,13 @@ main {
   border-radius: 25px;
 }
 
+.box-flex {
+  display: flex;
+}
+
 .box {
-  width: 30%;
-  float: left;
+  flex: 1;
+  flex-direction: row;
   padding: 2em;
   text-align: center;
   color: #fff;
